@@ -1,0 +1,39 @@
+<div class="image-uploader">
+    
+    <div class="form-group">
+      <label for="imageUpload" class="image-label" ><i class="fa fa-image"></i></label>
+      <input type="file" id="imageUpload" (change)="onFileSelected($event)" accept="image/*" >
+      <div class="image-preview">
+        <ng-container *ngIf="(selectedImage$ | async) as selectedImage; else noImage">
+            <img [src]="selectedImage" class="selectedImage" alt="Selected Image">
+          </ng-container>
+          <ng-template #noImage>
+            <div class="empty"></div>
+          </ng-template>
+      </div>
+    </div>
+  <div class="form-group sup-info">
+      <label for="userName">Suplier Name:</label>
+      <input type="text" id="userName" [(ngModel)]="name" (blur)="onUserNameChange()"  name="userName" placeholder="Enter your name">
+    </div>
+    
+  </div>
+  <div class="pro-type">
+    <label>Chose Product Type</label>
+    <app-radio-btn
+                [label]="'Reservation Through Day'"
+                [value]="'res-day'"
+                [checked]="selectedOption === 'res-day'"
+                (valueChange)="selectedOption = $event"
+            >
+            </app-radio-btn>
+            <app-radio-btn
+            [label]="'Reservation period'"
+            [value]="'per-day'"
+            aria-placeholder="(more than 1 day)"
+            [checked]="selectedOption === 'per-day'"
+            (valueChange)="selectedOption = $event"
+        >
+        </app-radio-btn>
+  </div>
+  

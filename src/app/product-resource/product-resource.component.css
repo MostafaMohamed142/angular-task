@@ -1,0 +1,33 @@
+.pro-resource{
+width: 723px;
+  margin-top: 42px;
+  border: 1px ridge aliceblue;
+  border-radius: 9px;
+  margin-left: 20px;
+  background: white;
+  height: 208.34px;
+}
+.mygroup label{
+    font-size: 16px;
+  position: relative;
+  left: 14px;
+  top: 7px;
+  color: #92A1AD;
+}
+.mygroup input[type='number']{
+    width: 674px;
+  height: 54.92px;
+  margin-top: 19px;
+  margin-left: 11px;
+  border: 1px ridge #D9D9D9;
+  border-radius: 9px;
+  font-size: 18px;
+  padding: 0px 9px;
+}
+.mat-mdc-form-field{
+    position: absolute;
+  right: 87px;
+  bottom: 295px;;
+  width: 113px;
+  height: 71px;
+}

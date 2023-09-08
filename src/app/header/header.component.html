@@ -1,0 +1,21 @@
+<div class="firstDiv" dir="ltr">
+    <div class="banner">
+     <span class="arrow-icon"><i class="fa fa-arrow-left"></i></span>
+      <h3 class="banner-title">
+        {{title}}
+      </h3>
+    </div>
+      
+    <div class="banner-right">
+    <mat-slide-toggle class="slider" [(ngModel)]="isActive">
+        {{ isActive ? 'Active' : 'Not Active' }}
+    </mat-slide-toggle>
+
+        <button class="save-btn" (click)="onSaveClick()">Save Changes</button>
+        <button class="del-btn">
+            <i class="fa fa-trash"></i>
+            Delete Suplier
+        </button>
+    </div>
+    
+</div>

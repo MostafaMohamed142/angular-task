@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~font-awesome/css/font-awesome.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background-color: #B2A6A696; }
+.mdc-switch .mdc-switch__track {
+    height: 17px;
+    padding: 0px 19px;
+  }
+#mat-mdc-slide-toggle-1-label {
+    margin-left: 6px;
+    font-size: 16px;
+  }
+  .mdc-switch:enabled .mdc-switch__track::before {
+    background: #0771DE !important;
+  }
+  .mdc-elevation-overlay{
+    background-color: white !important;
+  }
+  .counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 204px;
+    border: 1px ridge #dfdcdc;
+    margin-top: 11px;
+    height: 37px;
+    gap: 50px;
+    padding: 6px;
+    border-radius: 9px;
+  background: #F4EEEE;
+  }
+  .btn-counter {
+    width: 30.68px;
+    height: 30.99px;
+    border-radius: 6px;
+    color: white;
+    background: #0771DE;
+    border: none;
+  }

@@ -1,0 +1,89 @@
+<div class="pro-resource">
+    <div class="form-group mygroup">
+        <label for="numberSelect">Suplier Avaliable Till</label>
+        <input type="number" id="numberSelect" min="0" max="12" value="0"/>
+        <mat-form-field >
+            <mat-select matNativeControl [(ngModel)]="selectedTime" name="time" >
+              <mat-option *ngFor="let time of Duration" [value]="time.value" aria-selected="true">
+                {{time.viewValue}}
+              </mat-option>
+            </mat-select>
+            <!-- <p> Selected car: {{selectedTime}} </p> -->
+          </mat-form-field>
+    </div>
+    <label style="position: relative;
+    left: 20px;
+    top: 5px;
+    font-size: 14px;
+    color: #92A1AD;">suplier time</label>
+    <div style="display: flex;
+        align-items: center;
+        height: 50px;
+        padding: 0px 16px;">
+        
+        <div>
+            
+            <app-radio-btn
+                [label]="'Service Time'"
+                [value]="'service-time'"
+                [checked]="selectedOption === 'service-time'"
+                (valueChange)="selectedOption = $event"
+            >
+            
+            </app-radio-btn> 
+            <!-- <span><i class="fa-solid fa-cube"></i></span> -->
+        </div>
+       <div>
+            <app-radio-btn
+                [label]="'Fixed Time'"
+                [value]="'fixed-time'"
+                [checked]="selectedOption === 'fixed-time'"
+                (valueChange)="selectedOption = $event"
+            >
+            
+            </app-radio-btn>
+            <!-- <span><i class="fa fa-clock"></i></span> -->
+       </div>
+       <div *ngIf="selectedOption=== 'fixed-time'">
+            <app-counter></app-counter>
+       </div>
+
+    </div>
+    <label style="position: relative;
+    left: 20px;
+    top: -17px;
+    font-size: 14px;
+    color: #92A1AD;">Multi Reservation</label>
+      <div style="display: flex;
+        align-items: center;
+        padding: 0px 16px;
+        margin-top: -20px;">
+        <div>
+            <app-radio-btn
+                [label]="'One Reservation Only'"
+                [value]="'onePerson'"
+                [checked]="selectedOption === 'onePerson'"
+                (valueChange)="selectedOption = $event"
+            >
+            </app-radio-btn> 
+        </div>
+       <div>
+            <app-radio-btn
+                [label]="'Multi Reservation'"
+                [value]="'MultiPerson'"
+                [checked]="selectedOption === 'MultiPerson'"
+                (valueChange)="selectedOption = $event"
+            >
+            </app-radio-btn>
+            
+       </div>
+       <div *ngIf="selectedOption=== 'MultiPerson'">
+            <input type="number" value="0" min="0" max="10" name="Reservation" style="height: 36.92px;
+            margin-left: 128px;
+            border-radius: 9px;
+            background: #F4EEEE;
+            border: 1px ridge #dfdcdc;"/>
+       </div>
+
+    </div> 
+</div>

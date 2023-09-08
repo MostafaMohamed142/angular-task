@@ -1,0 +1,70 @@
+.firstDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.banner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 27px;
+}
+.arrow-icon{
+    width: 57px;
+  height: 57px;
+  margin-top: 124px;
+  margin-left: 100px;
+  border-radius: 17px;
+  background-color: white;
+  cursor: pointer;
+}
+.arrow-icon i{
+    margin: 19px 19px;
+    font-size: 19px;
+}
+.banner-title{
+    width: 147.92px;
+  height: 15.95px;
+  margin-top: 113.75px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 18px;
+}
+.banner-right{
+    width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-right: 100px;
+}
+.save-btn{
+    width: 172.07px;
+  height: 56.82px;
+  border-radius: 9px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.del-btn{
+    width: 150.94px;
+  height: 56.82px;
+  border-radius: 9px;
+  border: 1px ridge #FF4B55;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #FF4B55;
+  cursor: pointer;
+}
+.del-btn i{
+    padding: 0px 4px;
+  font-size: 18px;
+}
+.slider{
+    font-size: 20px;
+  width: 200px;
+  margin-top: 10px;
+}

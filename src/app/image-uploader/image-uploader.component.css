@@ -1,0 +1,71 @@
+.image-uploader{
+    display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 1px solid aliceblue;
+  width: 404.31px;
+  height: 208.34px;
+  margin-top: 43.31px;
+  margin-left: 97px;
+  align-items: center;
+  border-radius: 7px;
+  padding: 0px 27px;
+  background-color: white;
+}
+input[type="file"]{
+    display: none;
+}
+.image-label{
+    position: relative;
+  top: 25px;
+  left: 6px;
+  font-size: 15px;
+}
+.empty{
+    width: 100px;
+  background-color:#c4bbbb;
+  height: 125px;
+  border-radius: 50px;
+}
+.selectedImage{
+    width: 100px;
+    height: 125px;
+    border-radius: 50px; 
+}
+.fa-image{
+    color: white;
+  background-color: blue;
+  padding: 2px;
+  border-radius: 4px;
+}
+.sup-info{
+    display: flex;
+  flex-direction: column;
+  margin-left: 33px;
+  gap: 10px;
+}
+.sup-info label{
+    font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.sup-info input[type="text"]{
+    width: 250px;
+  height: 26.93px;
+  border: 1px ridge #B2A6A6;
+  border-radius: 9px;
+  background: #F4EEEE;
+  padding: 3px 9px;
+}
+.pro-type{
+  display: flex;
+  border: 1px ridge aliceblue;
+  padding: 12px;
+  justify-content: space-around;
+  width: fit-content;
+  margin-left: 94px;
+  margin-top: 18px;
+  background: white;
+  border-radius: 9px;
+  color: #92A1AD;
+}
